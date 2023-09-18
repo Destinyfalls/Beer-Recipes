@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BeerListViewController" customModule="Beer_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6g6-Jl-I3w">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerTableViewCell" id="4xQ-xg-2LO" customClass="BeerTableViewCell" customModule="Beer_Recipes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="207"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4xQ-xg-2LO" id="XNY-CW-tRr">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb8-O9-lIi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="207"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMs-fZ-a8H">
+                                                            <rect key="frame" x="0.0" y="10" width="196.66666666666666" height="197"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="aMs-fZ-a8H" secondAttribute="height" multiplier="1:1" id="6X9-iU-epn"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECb-EK-Fru">
+                                                            <rect key="frame" x="201.66666666666663" y="14.999999999999998" width="186.33333333333337" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lu4-9s-Xf7">
+                                                            <rect key="frame" x="201.66666666666663" y="40.333333333333336" width="186.33333333333337" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ECb-EK-Fru" secondAttribute="trailing" constant="5" id="711-cQ-1gC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="aMs-fZ-a8H" secondAttribute="bottom" id="O5K-b6-53W"/>
+                                                        <constraint firstItem="Lu4-9s-Xf7" firstAttribute="leading" secondItem="aMs-fZ-a8H" secondAttribute="trailing" constant="5" id="QCo-7t-qJf"/>
+                                                        <constraint firstItem="aMs-fZ-a8H" firstAttribute="leading" secondItem="Qb8-O9-lIi" secondAttribute="leading" id="RUA-gj-C6f"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lu4-9s-Xf7" secondAttribute="bottom" id="SgS-Cg-BqQ"/>
+                                                        <constraint firstItem="aMs-fZ-a8H" firstAttribute="width" secondItem="Qb8-O9-lIi" secondAttribute="width" multiplier="0.5" id="bki-Cy-eXT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Lu4-9s-Xf7" secondAttribute="trailing" constant="5" id="fj1-Ki-0K7"/>
+                                                        <constraint firstItem="Lu4-9s-Xf7" firstAttribute="top" secondItem="ECb-EK-Fru" secondAttribute="bottom" constant="5" id="fsW-se-Icz"/>
+                                                        <constraint firstItem="aMs-fZ-a8H" firstAttribute="top" secondItem="Qb8-O9-lIi" secondAttribute="top" constant="10" id="iVG-Sw-9qi"/>
+                                                        <constraint firstItem="ECb-EK-Fru" firstAttribute="top" secondItem="Qb8-O9-lIi" secondAttribute="top" constant="15" id="ibz-EZ-6a0"/>
+                                                        <constraint firstItem="ECb-EK-Fru" firstAttribute="leading" secondItem="aMs-fZ-a8H" secondAttribute="trailing" constant="5" id="xOC-CO-otv"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qb8-O9-lIi" firstAttribute="leading" secondItem="XNY-CW-tRr" secondAttribute="leading" id="DEX-B7-kri"/>
+                                                <constraint firstItem="Qb8-O9-lIi" firstAttribute="top" secondItem="XNY-CW-tRr" secondAttribute="top" id="XbY-W6-MgB"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qb8-O9-lIi" secondAttribute="trailing" id="xRL-7a-O5q"/>
+                                                <constraint firstAttribute="bottom" secondItem="Qb8-O9-lIi" secondAttribute="bottom" id="xVg-jH-qG8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="beerImageView" destination="aMs-fZ-a8H" id="VNl-do-8lf"/>
+                                            <outlet property="descriptionLabel" destination="Lu4-9s-Xf7" id="IWT-MU-MuT"/>
+                                            <outlet property="nameLabel" destination="ECb-EK-Fru" id="uwB-rS-iRA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6g6-Jl-I3w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ef6-ln-UIq"/>
+                            <constraint firstItem="6g6-Jl-I3w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MWD-mD-pK4"/>
+                            <constraint firstAttribute="bottom" secondItem="6g6-Jl-I3w" secondAttribute="bottom" id="iiN-PJ-BZs"/>
+                            <constraint firstItem="6g6-Jl-I3w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vUd-14-tAI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerTableView" destination="6g6-Jl-I3w" id="bPR-1c-yzw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
